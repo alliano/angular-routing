@@ -1,0 +1,26 @@
+nav{
+    background-color: rgb(120, 120, 245);
+}
+nav .list{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+nav .list ul{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 30%;
+    justify-content: space-around;
+    list-style: none;
+}
+nav .list ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+nav .list ul li a:hover{
+    color: black;
+    background-color:#fff;
+    border: 1px solid black;
+    border-radius: 5px;
+}

@@ -1,0 +1,10 @@
+
+<h2>list admin</h2>
+<ul *ngFor="let n of data">
+    <div *ngIf="n.status == true">
+        <li>name : {{n.name}}</li>
+        <li>age : {{n.age}}</li>
+        <li>major : {{n.major}}</li>
+    </div>
+</ul>
+<router-outlet></router-outlet>
