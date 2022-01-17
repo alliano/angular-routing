@@ -4,6 +4,7 @@ import { AdminComponent } from './admin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { DatabaseComponent } from './database/database.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routrs: Routes = [
   {
@@ -30,7 +31,8 @@ const routrs: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routrs)
+    RouterModule.forChild(routrs),
+    ReactiveFormsModule
   ],
 
 })

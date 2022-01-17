@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-admin',
@@ -26,7 +27,27 @@ export class AdminComponent implements OnInit {
       status: true,
     },
   ];
-  constructor() {}
+  // form group
+  public login: any = new FormGroup({
+    username: new FormControl(''),
+    password : new FormControl('')
+  });
+  constructor(private fb:FormBuilder) {
+    
+  }
+  // from ulilder
+  public userLogin: Object | string | any = this.fb.group({
+    username: [''],
+    password: ['']
+  })
+  public onsubmit() {
+    
+    const save = (data:string): void => {
+      localStorage.setItem("admin", data.toString());
+    }
+    save(JSON.stringify(this.userLogin.value));
+    
+  }
 
   ngOnInit(): void {}
 }

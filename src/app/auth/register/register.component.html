@@ -1,1 +1,40 @@
-<p>register works!</p>
+<div class="container">
+  <div class="header">
+    <h1>Renggister</h1>
+  </div>
+  <div class="form-control">
+    <form action="" [formGroup]="renggister">
+      <label for="frist-name">frist name</label>
+      <input
+        type="text"
+        name="frist-name"
+        id="frist-name"
+        placeholder="frist-name"
+        required
+      />
+
+      <label for="last-name">last name</label>
+      <input
+        type="text"
+        name="last-name"
+        id="last-name"
+        placeholder="last name"
+        required
+      />
+
+      <label for="born">born</label><br>
+      <input type="date" />
+      <label for="password">password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        placeholder="password"
+      />
+      <div class="submit">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</div>

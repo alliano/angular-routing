@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="container">
+    <div class="header">
+        <h1>welcome to in System</h1>
+        <p>before u access system pelese login</p>
+    </div>
+    <form class="form-control"(ngSubmit) ="onsubmit()" [formGroup]="login">
+        <label for="username">username</label>
+        <input type="text" required formControlName="username" name="username" id="username" placeholder="username">
+        <label for="password">password</label>
+        <input type="password" required formControlName="password" name="password" placeholder="password">
+        <div class="submit">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
+<h1>list name</h1>
+    <div class="fore" *ngFor="let a of data">
+        <ul>
+            <li>name : {{a.name}} </li>
+            <li>age : {{a.age}} </li>
+            <li>major : {{a.major}} </li>
+        </ul>
+    </div>
+    
+<router-outlet></router-outlet>
