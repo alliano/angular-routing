@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+    height: auto;
+    border: 1px solid aqua;
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.container .content{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    height: 500px;
+}
+.container .content .member{
+    border: 1px solid black;
+    height: 500px;
+    overflow-y: scroll;
+    width: 30%;
+}
+.container .content .member ul li{
+    /* display: flex; */
+    list-style: none;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+.container .content .chat-area{
+    border: 3px solid orange;
+    /* background-color: red; */
+    width: 70%;
+}
+.core{
+    /* border: 1px solid black; */
+    height: 450px;
+}
+.input-tex {
+    padding: 5px;
+    /* border: 1px solid black; */
+}
+.input-tex input{
+    width: 70%;
+}
+.input-tex button{
+    width: 40px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}

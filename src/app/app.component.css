@@ -1,26 +1,78 @@
-nav{
-    background-color: rgb(120, 120, 245);
+.container{
+    float: left;
+    height: auto;
+    width: 15%;
+    text-align: center;
+    padding: 5px;
+    background-color: royalblue;
 }
-nav .list{
+.container .header h1{
+    font-size: 15px;
+    color: #f9f9f9;
+}
+hr{
+    color: #f9f9f9;
+}
+.container .main-menu{
+    height: 540px;
+}
+.container .main-menu ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 5px;
+}
+.container .main-menu ul li{
+    /* border: 1px solid #f9f9f9;   */
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+.container .main-menu ul li:hover{
+    background-color: rgba(187, 184, 181, 0.494);
+}
+.container .main-menu ul li svg{
+   margin-right: 10px;
+}
+.container .main-menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #f9f9f9;
+    width: 100%;
+}
+.nav1{
+    background-color: royalblue;
+}
+.nav1 .core{
     display: flex;
     justify-content: space-around;
-    padding: 15px;
+    padding: 17px;
 }
-nav .list ul{
-    display: flex;
+.nav1 .core form{
     /* border: 1px solid black; */
-    width: 30%;
-    justify-content: space-around;
+    width: 40%;
+    padding: 3px;
+}
+.nav1 .core form input{
+    width: 100%;
+}
+.nav1 .core li svg{
+    color: #f9f9f9;
+}
+.nav1 .core li{
     list-style: none;
 }
-nav .list ul li a{
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
+
+
+
+
+
+.clear::after,.clear::before{
+    content: '';
+    display: table;
 }
-nav .list ul li a:hover{
-    color: black;
-    background-color:#fff;
-    border: 1px solid black;
-    border-radius: 5px;
+.clear::after{
+    clear: both;
+}
+.clear{
+    *z-index: 1;
 }
